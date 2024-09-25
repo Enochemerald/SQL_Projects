@@ -1,4 +1,4 @@
-# Walmart-analysis-project
+# Walmart-sales-analysis
 ## About
 
 This project aims to explore the Walmart Sales data to understand top performing branches and products, sales trend of of different products, customer behaviour. The aims is to study how sales strategies can be improved and optimized. The dataset was obtained from the [Kaggle Walmart Sales Forecasting Competition](https://www.kaggle.com/c/walmart-recruiting-store-sales-forecasting).
@@ -11,7 +11,7 @@ The major aim of thie project is to gain insight into the sales data of Walmart 
 
  About Data
 
-The dataset was obtained from the [Kaggle Walmart Sales Forecasting Competition](https://www.kaggle.com/c/walmart-recruiting-store-sales-forecasting). This dataset contains sales transactions from a three different branches of Walmart, respectively located in Mandalay, Yangon and Naypyitaw. The data contains 17 columns and 1000 rows:
+The dataset was obtained from the.This dataset contains sales transactions from a three different branches of Walmart, respectively located in Mandalay, Yangon and Naypyitaw. The data contains 17 columns and 1000 rows:
 
 | Column                  | Description                             | Data Type      |
 | :---------------------- | :-------------------------------------- | :------------- |
@@ -52,9 +52,9 @@ The dataset was obtained from the [Kaggle Walmart Sales Forecasting Competition]
 
 1. **Data Wrangling:** This is the first step where inspection of data is done to make sure **NULL** values and missing values are detected and data replacement methods are used to replace, missing or **NULL** values.
 
-> 1. Build a database
+> 1. Create a database
 > 2. Create table and insert the data.
-> 3. Set fields with  not null constraints. There are no null values in our database while creating the tables, we set **NOT NULL** for each field, hence null values are filtered out.
+> 3. Set fields with not null constraints. While creating the tables, we set **NOT NULL** for each field, hence null values are filtered out.
 
 2. **Feature Engineering:** This will help use generate some new columns from existing ones.
 
@@ -66,11 +66,13 @@ The dataset was obtained from the [Kaggle Walmart Sales Forecasting Competition]
 
 2. **Exploratory Data Analysis (EDA):** Exploratory data analysis is done to solve the listed questions and aims of this project.
 
-3. **Conclusion:**
 
-## Business Questions To Answer
 
-### Generic Question
+
+
+## Queries
+
+### Generic
 
 1. How many unique cities does the data have?
 2. In which city is each branch?
@@ -131,7 +133,7 @@ $ \text{Gross Margin} = \frac{\text{gross income}}{\text{total revenue}} $
 
 ## Code
 
-For the rest of the code, check the [SQL_queries.sql](https://github.com/Princekrampah/WalmartSalesAnalysis/blob/master/SQL_queries.sql) file
+For the rest of the code, check the (https://github.com/Enochemerald/Walmart-analysis-project/blob/37347393d0f35874db8bd04b91f5e9abbe182c69/Walmart_Analysis_project.sql) 
 
 ```sql
 -- Create database
@@ -156,7 +158,4 @@ CREATE TABLE IF NOT EXISTS sales(
     gross_margin_pct FLOAT(11,9),
     gross_income DECIMAL(12, 4),
     rating FLOAT(2, 1)
-
-
-
 );
